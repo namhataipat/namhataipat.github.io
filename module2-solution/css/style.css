@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+}
+
+.box {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  border: 1px black;
+  border-style: solid;
+  background-color: aquamarine;
+  display: inline-block;
+}
+
+.boxTitle {
+  background-color: pink;
+  position: absolute;
+  right: 0px;
+  width: fit-content;
+  border: 1px black;
+  border-style: solid;
+}
+
+.description {
+  margin-top: 15px;
+}
+
+/* 992 above */
+@media only screen and (min-width: 991px) {
+  .box {
+    max-width: 32%;
+  }
+}
+
+@media only screen and (max-width: 990px) and (min-width: 765px) {
+  .box {
+    max-width: 48%;
+  }
+
+  .lastBox {
+    max-width: 96%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .box {
+    max-width: 100%;
+  }
+}
+
+.firstBox > .boxTitle {
+  background-color: palegreen;
+}
+
+.secondBox > .boxTitle {
+  background-color: oldlace;
+}
+
+.lastBox > .boxTitle {
+  background-color: lightsalmon;
+}
