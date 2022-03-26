@@ -16,14 +16,18 @@ h1 {
 .boxTitle {
   background-color: pink;
   position: absolute;
-  right: 0px;
+  right: -1px;
+  top: -1px;
   width: fit-content;
   border: 1px black;
   border-style: solid;
+  padding: 3px;
 }
 
 .description {
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 /* 992 above */
@@ -39,7 +43,7 @@ h1 {
   }
 
   .lastBox {
-    max-width: 96%;
+    max-width: 97%;
   }
 }
 
